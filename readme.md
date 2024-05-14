@@ -1,4 +1,10 @@
-# JSS
+
+# Status
+This project is no longer maintained. [I am](https://github.com/kof) working on a new tool called [Webstudio](https://github.com/webstudio-is/webstudio). It allows you to visually build and generate optimized CSS and React components along with a [Remix](https://remix.run/) app. Similar to Webflow, but open-source and goes beyond marketing sites.
+
+<a href="https://github.com/webstudio-is/webstudio" target="_blank"><img width="100" src="https://raw.githubusercontent.com/webstudio-is/webstudio-design/main/brand/logo-icon-color.svg"></a>
+
+# About
 
 [![Version](https://img.shields.io/npm/v/jss.svg?style=flat)](https://npmjs.org/package/jss)
 [![License](https://img.shields.io/npm/l/jss.svg?style=flat)](https://github.com/cssinjs/jss/blob/master/LICENSE)
