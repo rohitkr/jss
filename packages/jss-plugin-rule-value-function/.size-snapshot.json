@@ -1,23 +1,23 @@
 {
   "jss-plugin-rule-value-function.js": {
-    "bundled": 2981,
+    "bundled": 3093,
     "minified": 1046,
-    "gzipped": 579
+    "gzipped": 580
   },
   "jss-plugin-rule-value-function.min.js": {
-    "bundled": 2402,
+    "bundled": 2444,
     "minified": 795,
-    "gzipped": 455
+    "gzipped": 459
   },
   "jss-plugin-rule-value-function.cjs.js": {
-    "bundled": 2549,
+    "bundled": 2584,
     "minified": 1059,
-    "gzipped": 551
+    "gzipped": 554
   },
   "jss-plugin-rule-value-function.esm.js": {
-    "bundled": 2263,
-    "minified": 836,
-    "gzipped": 451,
+    "bundled": 2302,
+    "minified": 840,
+    "gzipped": 455,
     "treeshaked": {
       "rollup": {
         "code": 33,

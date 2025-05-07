@@ -62,7 +62,8 @@ export type JssValue =
   | null
   | false
 
-export type InsertionPoint = string | HTMLElement | Comment
+// Allow CSSStyleSheet as a valid insertionPoint for direct rule injection (CSP support)
+export type InsertionPoint = string | HTMLElement | Comment | CSSStyleSheet
 
 export interface UpdateOptions {
   process?: boolean

@@ -1,23 +1,23 @@
 {
   "jss-plugin-nested.js": {
-    "bundled": 4752,
-    "minified": 1697,
-    "gzipped": 907
+    "bundled": 4682,
+    "minified": 1705,
+    "gzipped": 912
   },
   "jss-plugin-nested.min.js": {
-    "bundled": 4312,
-    "minified": 1481,
-    "gzipped": 779
+    "bundled": 4244,
+    "minified": 1489,
+    "gzipped": 782
   },
   "jss-plugin-nested.cjs.js": {
-    "bundled": 4029,
+    "bundled": 4040,
     "minified": 1681,
-    "gzipped": 835
+    "gzipped": 832
   },
   "jss-plugin-nested.esm.js": {
-    "bundled": 3590,
-    "minified": 1341,
-    "gzipped": 719,
+    "bundled": 3605,
+    "minified": 1345,
+    "gzipped": 723,
     "treeshaked": {
       "rollup": {
         "code": 64,

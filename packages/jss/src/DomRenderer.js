@@ -276,22 +276,29 @@ export default class DomRenderer {
     if (sheet) sheets.add(sheet)
 
     this.sheet = sheet
-    const {media, meta, element} = this.sheet ? this.sheet.options : {}
-    this.element = element || createStyle()
-    this.element.setAttribute('data-jss', '')
-    if (media) this.element.setAttribute('media', media)
-    if (meta) this.element.setAttribute('data-meta', meta)
-    const nonce = getNonce()
-    if (nonce) this.element.setAttribute('nonce', nonce)
+    const {media, meta, element, insertionPoint} = this.sheet ? this.sheet.options : {}
+    if (insertionPoint instanceof CSSStyleSheet) {
+      // If insertionPoint is an instance of CSSStyleSheet, use it directly.
+      this.element = null
+      this.cssStyleSheet = insertionPoint
+    } else {
+      this.cssStyleSheet = null
+      this.element = element || createStyle()
+      this.element.setAttribute('data-jss', '')
+      if (media) this.element.setAttribute('media', media)
+      if (meta) this.element.setAttribute('data-meta', meta)
+      const nonce = getNonce()
+      if (nonce) this.element.setAttribute('nonce', nonce)
+    }
   }
 
   /**
    * Insert style element into render tree.
    */
   attach() {
-    // In the case the element node is external and it is already in the DOM.
-    if (this.element.parentNode || !this.sheet) return
-
+    // For CSSStyleSheet insertion point, we don't need to attach anything
+    if (this.cssStyleSheet || this.element.parentNode || !this.sheet) return
+    
     insertStyle(this.element, this.sheet.options)
 
     // When rules are inserted using `insertRule` API, after `sheet.detach().attach()`
@@ -308,6 +315,10 @@ export default class DomRenderer {
    */
   detach() {
     if (!this.sheet) return
+    
+    // For CSSStyleSheet insertion point, we can't detach it
+    if (this.cssStyleSheet) return
+    
     const {parentNode} = this.element
     if (parentNode) parentNode.removeChild(this.element)
     // In the most browsers, rules inserted using insertRule() API will be lost when style element is removed.
@@ -324,10 +335,18 @@ export default class DomRenderer {
   deploy() {
     const {sheet} = this
     if (!sheet) return
+    
+    if (this.cssStyleSheet) {
+      // For CSSStyleSheet insertion point, insert rules directly
+      this.insertRules(sheet.rules)
+      return
+    }
+    
     if (sheet.options.link) {
       this.insertRules(sheet.rules)
       return
     }
+    
     this.element.textContent = `\n${sheet.toString()}\n`
   }
 
@@ -344,15 +363,22 @@ export default class DomRenderer {
   /**
    * Insert a rule into element.
    */
-  insertRule(rule, index, nativeParent = this.element.sheet) {
+  insertRule(rule, index, nativeParent) {
+    const parentNode = nativeParent || (this.cssStyleSheet || (this.element && this.element.sheet))
+    
+    if (!parentNode) {
+      warning(false, '[JSS] Missing parent node for rule insertion.')
+      return false
+    }
+
     if (rule.rules) {
       const parent = rule
-      let latestNativeParent = nativeParent
+      let latestNativeParent = parentNode
       if (rule.type === 'conditional' || rule.type === 'keyframes') {
-        const insertionIndex = getValidRuleInsertionIndex(nativeParent, index)
+        const insertionIndex = getValidRuleInsertionIndex(parentNode, index)
         // We need to render the container without children first.
         latestNativeParent = insertRule(
-          nativeParent,
+          parentNode,
           parent.toString({children: false}),
           insertionIndex
         )
@@ -369,8 +395,8 @@ export default class DomRenderer {
 
     if (!ruleStr) return false
 
-    const insertionIndex = getValidRuleInsertionIndex(nativeParent, index)
-    const nativeRule = insertRule(nativeParent, ruleStr, insertionIndex)
+    const insertionIndex = getValidRuleInsertionIndex(parentNode, index)
+    const nativeRule = insertRule(parentNode, ruleStr, insertionIndex)
     if (nativeRule === false) {
       return false
     }
@@ -394,7 +420,12 @@ export default class DomRenderer {
    * Delete a rule.
    */
   deleteRule(cssRule) {
-    const {sheet} = this.element
+    // For CSSStyleSheet, use the stored reference
+    const sheet = this.cssStyleSheet || (this.element && this.element.sheet)
+    if (!sheet) {
+      warning(false, '[JSS] Unable to delete rule: sheet is not available.')
+      return false
+    }
     const index = this.indexOf(cssRule)
     if (index === -1) return false
     sheet.deleteRule(index)
@@ -415,7 +446,12 @@ export default class DomRenderer {
   replaceRule(cssRule, rule) {
     const index = this.indexOf(cssRule)
     if (index === -1) return false
-    this.element.sheet.deleteRule(index)
+    
+    // For CSSStyleSheet, use the stored reference
+    const sheet = this.cssStyleSheet || (this.element && this.element.sheet)
+    if (!sheet) return false
+    
+    sheet.deleteRule(index)
     this.cssRules.splice(index, 1)
     return this.insertRule(rule, index)
   }
@@ -424,6 +460,8 @@ export default class DomRenderer {
    * Get all rules elements.
    */
   getRules() {
-    return this.element.sheet.cssRules
+    if (this.cssStyleSheet) return this.cssStyleSheet.cssRules
+    if (this.element && this.element.sheet) return this.element.sheet.cssRules
+    return null
   }
 }

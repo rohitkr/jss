@@ -1,23 +1,23 @@
 {
   "jss-plugin-template.js": {
-    "bundled": 1758,
-    "minified": 774,
-    "gzipped": 467
+    "bundled": 1852,
+    "minified": 778,
+    "gzipped": 471
   },
   "jss-plugin-template.min.js": {
-    "bundled": 1397,
-    "minified": 608,
-    "gzipped": 370
+    "bundled": 1420,
+    "minified": 612,
+    "gzipped": 374
   },
   "jss-plugin-template.cjs.js": {
-    "bundled": 1343,
+    "bundled": 1341,
     "minified": 746,
-    "gzipped": 443
+    "gzipped": 444
   },
   "jss-plugin-template.esm.js": {
-    "bundled": 1053,
-    "minified": 518,
-    "gzipped": 341,
+    "bundled": 1055,
+    "minified": 522,
+    "gzipped": 344,
     "treeshaked": {
       "rollup": {
         "code": 21,

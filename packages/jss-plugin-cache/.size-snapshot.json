@@ -1,23 +1,23 @@
 {
   "jss-plugin-cache.js": {
-    "bundled": 1138,
+    "bundled": 1132,
     "minified": 572,
-    "gzipped": 356
+    "gzipped": 357
   },
   "jss-plugin-cache.min.js": {
-    "bundled": 1138,
+    "bundled": 1132,
     "minified": 572,
-    "gzipped": 356
+    "gzipped": 357
   },
   "jss-plugin-cache.cjs.js": {
-    "bundled": 748,
+    "bundled": 742,
     "minified": 371,
-    "gzipped": 261
+    "gzipped": 260
   },
   "jss-plugin-cache.esm.js": {
-    "bundled": 666,
-    "minified": 302,
-    "gzipped": 217,
+    "bundled": 664,
+    "minified": 306,
+    "gzipped": 219,
     "treeshaked": {
       "rollup": {
         "code": 0,
