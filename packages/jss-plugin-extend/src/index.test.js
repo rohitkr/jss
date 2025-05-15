@@ -2,11 +2,11 @@
 
 import {stripIndent} from 'common-tags'
 import expect from 'expect.js'
-import nested from 'jss-plugin-nested'
-import expand from 'jss-plugin-expand'
+import nested from '@secure-jss/jss-plugin-nested'
+import expand from '@secure-jss/jss-plugin-expand'
 import sinon from 'sinon'
-import functionPlugin from 'jss-plugin-rule-value-function'
-import {create} from 'jss'
+import functionPlugin from '@secure-jss/jss-plugin-rule-value-function'
+import {create} from '@secure-jss/jss'
 
 import extend from './index'
 

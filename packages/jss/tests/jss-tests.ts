@@ -7,7 +7,7 @@ import {
   SheetsRegistry,
   default as sharedInstance,
   MinimalObservable
-} from 'jss'
+} from '@secure-jss/jss'
 
 const jss = createJSS().setup({createGenerateId})
 jss.use({}, {})

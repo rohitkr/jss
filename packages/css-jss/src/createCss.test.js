@@ -1,6 +1,6 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import {create as createJss} from 'jss'
+import {create as createJss} from '@secure-jss/jss'
 import {createGenerateId} from '../../../tests/utils'
 import {create as createCss} from './index'
 

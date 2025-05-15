@@ -1,30 +1,30 @@
 import {Component, OnInit} from '@angular/core'
 
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 @Component({
   selector: 'app',
   template: `
-  <h1 [class]="classes.title">JSS Angular5 example</h1>
+    <h1 [class]="classes.title">JSS Angular5 example</h1>
 
-  <input [class]="classes.area" type="textarea">
+    <input [class]="classes.area" type="textarea" />
 
-  <div [class]="classes.buttons">      
-    <label [class]="classes.redButton" (change)="onRedChanged($event)">
-      <input type="radio" name="color" checked>
-      Red
-    </label>
+    <div [class]="classes.buttons">
+      <label [class]="classes.redButton" (change)="onRedChanged($event)">
+        <input type="radio" name="color" checked />
+        Red
+      </label>
 
-    <label [class]="classes.greenButton" (change)="onGreenChanged($event)">
-      <input type="radio" name="color">
-      Green
-    </label>
+      <label [class]="classes.greenButton" (change)="onGreenChanged($event)">
+        <input type="radio" name="color" />
+        Green
+      </label>
 
-    <label [class]="classes.blueButton" (change)="onBlueChanged($event)">
-      <input type="radio" name="color">
-      Blue
-    </label>
-  </div>
+      <label [class]="classes.blueButton" (change)="onBlueChanged($event)">
+        <input type="radio" name="color" />
+        Blue
+      </label>
+    </div>
   `
 })
 export class AppComponent implements OnInit {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         width: '100%',
         height: '10rem',
         color: 'white',
-        backgroundColor: data => data.area.backgroundColor
+        backgroundColor: (data) => data.area.backgroundColor
       },
       buttons: {
         display: 'flex',

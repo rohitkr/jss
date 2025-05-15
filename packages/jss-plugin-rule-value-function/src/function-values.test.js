@@ -3,7 +3,7 @@
 import {stripIndent} from 'common-tags'
 import expect from 'expect.js'
 
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 import functionPlugin from '.'
 
 const settings = {createGenerateId: () => (rule) => `${rule.key}-id`}

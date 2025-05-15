@@ -1,5 +1,5 @@
 import React from 'react'
-import {createUseStyles, useTheme, ThemeProvider} from 'react-jss'
+import {createUseStyles, useTheme, ThemeProvider} from '@secure-jss/react-jss'
 
 /* -------------------- EXPLICIT EXAMPLE -------------------- */
 // Define Component

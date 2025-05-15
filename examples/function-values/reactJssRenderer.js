@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import injectSheet from 'react-jss'
+import injectSheet from '@secure-jss/react-jss'
 import times from 'lodash/times'
 import {getRandomColor, getRandomTransform} from './utils'
 
-export default amount => {
+export default (amount) => {
   class JssAnimatedObjects extends Component {
     shouldComponentUpdate = () => false
 
@@ -11,7 +11,7 @@ export default amount => {
       const {classes} = this.props
       return (
         <div>
-          {times(amount, i => (
+          {times(amount, (i) => (
             <div key={i} className={classes[`object${i}`]} />
           ))}
         </div>
@@ -21,7 +21,7 @@ export default amount => {
 
   const styles = {}
 
-  times(amount, i => {
+  times(amount, (i) => {
     styles[`object${i}`] = {
       position: 'absolute',
       width: 50,

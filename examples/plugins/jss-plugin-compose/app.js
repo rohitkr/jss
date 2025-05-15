@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginCompose from 'jss-plugin-compose'
+import jss from '@secure-jss/jss'
+import jssPluginCompose from '@secure-jss/jss-plugin-compose'
 
 const styles = {
   button: {

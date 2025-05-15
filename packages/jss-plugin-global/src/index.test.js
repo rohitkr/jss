@@ -1,7 +1,7 @@
 import {stripIndent} from 'common-tags'
 import expect from 'expect.js'
-import {create} from 'jss'
-import nested from 'jss-plugin-nested'
+import {create} from '@secure-jss/jss'
+import nested from '@secure-jss/jss-plugin-nested'
 
 import global from './index'
 

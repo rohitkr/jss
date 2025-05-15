@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {Classes} from 'jss'
+import type {Classes} from '@secure-jss/jss'
 
 type MergeClasses = (Classes, Classes) => Classes
 

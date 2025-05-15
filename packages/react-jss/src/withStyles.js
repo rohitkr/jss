@@ -6,6 +6,7 @@ import memoize from './utils/memoizeOne'
 import mergeClasses from './utils/mergeClasses'
 import getSheetIndex from './utils/getSheetIndex'
 import createUseStyles from './createUseStyles'
+import PropTypes from 'prop-types'
 
 const NoRenderer = (props) => props.children || null
 
@@ -55,6 +56,11 @@ const createWithStyles = (styles, options = {}) => {
     WithStyles.defaultProps = {...InnerComponent.defaultProps}
 
     WithStyles.InnerComponent = InnerComponent
+
+    WithStyles.propTypes = {
+      children: PropTypes.node,
+      classes: PropTypes.object
+    }
 
     return hoistNonReactStatics(WithStyles, InnerComponent)
   }

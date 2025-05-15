@@ -1,5 +1,12 @@
 ﻿// @flow
-import type {UpdateOptions, JssStyle, RuleOptions, Rule, BaseRule, StyleSheet} from 'jss'
+import type {
+  UpdateOptions,
+  JssStyle,
+  RuleOptions,
+  Rule,
+  BaseRule,
+  StyleSheet
+} from '@secure-jss/jss'
 
 export type Options = UpdateOptions
 
@@ -16,9 +23,7 @@ export type Observable<T> = {
   subscribe(observerOrNext: ObserverOrNext<T>): Subscription
 }
 
-declare export default (
-  Options | void
-) => {
+declare export default (Options | void) => {
   onCreateRule: (
     name: string,
     decl: JssStyle | Observable<{[string]: string | number}>,

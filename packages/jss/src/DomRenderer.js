@@ -298,7 +298,7 @@ export default class DomRenderer {
   attach() {
     // For CSSStyleSheet insertion point, we don't need to attach anything
     if (this.cssStyleSheet || this.element.parentNode || !this.sheet) return
-    
+
     insertStyle(this.element, this.sheet.options)
 
     // When rules are inserted using `insertRule` API, after `sheet.detach().attach()`
@@ -315,10 +315,10 @@ export default class DomRenderer {
    */
   detach() {
     if (!this.sheet) return
-    
+
     // For CSSStyleSheet insertion point, we can't detach it
     if (this.cssStyleSheet) return
-    
+
     const {parentNode} = this.element
     if (parentNode) parentNode.removeChild(this.element)
     // In the most browsers, rules inserted using insertRule() API will be lost when style element is removed.
@@ -335,18 +335,18 @@ export default class DomRenderer {
   deploy() {
     const {sheet} = this
     if (!sheet) return
-    
+
     if (this.cssStyleSheet) {
       // For CSSStyleSheet insertion point, insert rules directly
       this.insertRules(sheet.rules)
       return
     }
-    
+
     if (sheet.options.link) {
       this.insertRules(sheet.rules)
       return
     }
-    
+
     this.element.textContent = `\n${sheet.toString()}\n`
   }
 
@@ -364,8 +364,8 @@ export default class DomRenderer {
    * Insert a rule into element.
    */
   insertRule(rule, index, nativeParent) {
-    const parentNode = nativeParent || (this.cssStyleSheet || (this.element && this.element.sheet))
-    
+    const parentNode = nativeParent || this.cssStyleSheet || (this.element && this.element.sheet)
+
     if (!parentNode) {
       warning(false, '[JSS] Missing parent node for rule insertion.')
       return false
@@ -446,11 +446,11 @@ export default class DomRenderer {
   replaceRule(cssRule, rule) {
     const index = this.indexOf(cssRule)
     if (index === -1) return false
-    
+
     // For CSSStyleSheet, use the stored reference
     const sheet = this.cssStyleSheet || (this.element && this.element.sheet)
     if (!sheet) return false
-    
+
     sheet.deleteRule(index)
     this.cssRules.splice(index, 1)
     return this.insertRule(rule, index)

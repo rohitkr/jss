@@ -1,6 +1,6 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 import pluginNested from '../../jss-plugin-nested'
 import pluginFunction from '.'
 

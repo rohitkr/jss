@@ -1,4 +1,5 @@
 # Status
+
 This project is no longer maintained. [I am](https://github.com/kof) working on a new tool called [Webstudio](https://github.com/webstudio-is/webstudio). It allows you to visually build and generate optimized CSS and React components along with a [Remix](https://remix.run/) app. Similar to Webflow, but open-source and goes beyond marketing sites.
 
 <a href="https://github.com/webstudio-is/webstudio" target="_blank"><img width="100" src="https://raw.githubusercontent.com/webstudio-is/webstudio-design/main/brand/logo-icon-color.svg"></a>
@@ -29,8 +30,8 @@ https://cssinjs.org/repl
 ## JSS Example
 
 ```javascript
-import jss from 'jss'
-import preset from 'jss-preset-default'
+import jss from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 import color from 'color'
 
 // One time setup with default plugins and settings.
@@ -84,7 +85,7 @@ document.body.innerHTML = `
 ```javascript
 import React from 'react'
 import {render} from 'react-dom'
-import {createUseStyles} from 'react-jss'
+import {createUseStyles} from '@secure-jss/react-jss'
 
 // Create your Styles. Remember, since React-JSS uses the default preset,
 // most plugins are available without further configuration needed.

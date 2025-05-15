@@ -1,4 +1,4 @@
-import {Plugin} from 'jss'
+import {Plugin} from '@secure-jss/jss'
 
 export type Options = {[key: string]: string}
 

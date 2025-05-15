@@ -1,4 +1,4 @@
-import {Jss, JssStyle} from 'jss'
+import {Jss, JssStyle} from '@secure-jss/jss'
 
 export {JssStyle}
 

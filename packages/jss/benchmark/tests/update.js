@@ -1,4 +1,4 @@
-import {create, sheets} from 'jss'
+import {create, sheets} from '@secure-jss/jss'
 
 function teardown() {
   this.sheet.detach()

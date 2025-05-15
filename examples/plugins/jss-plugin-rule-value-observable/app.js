@@ -1,6 +1,6 @@
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 import {Observable} from 'rxjs'
-import jssPluginRuleValueObservable from 'jss-plugin-rule-value-observable'
+import jssPluginRuleValueObservable from '@secure-jss/jss-plugin-rule-value-observable'
 
 const styles = {
   button: {

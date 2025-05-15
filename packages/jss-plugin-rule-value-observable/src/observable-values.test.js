@@ -1,9 +1,9 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
 import Observable from 'zen-observable'
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 
-import pluginDefaultUnit from 'jss-plugin-default-unit'
+import pluginDefaultUnit from '@secure-jss/jss-plugin-default-unit'
 import pluginObservable from '.'
 
 const settings = {createGenerateId: () => (rule) => `${rule.key}-id`}

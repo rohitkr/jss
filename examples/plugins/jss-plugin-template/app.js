@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginTemplate from 'jss-plugin-template'
+import jss from '@secure-jss/jss'
+import jssPluginTemplate from '@secure-jss/jss-plugin-template'
 
 // Styles
 const styles = {

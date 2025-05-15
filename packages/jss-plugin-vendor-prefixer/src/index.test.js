@@ -1,9 +1,9 @@
 import expect from 'expect.js'
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 import * as cssVendor from 'css-vendor'
 import browser from 'detect-browser'
 import {stripIndent} from 'common-tags'
-import functionPlugin from 'jss-plugin-rule-value-function'
+import functionPlugin from '@secure-jss/jss-plugin-rule-value-function'
 
 import vendorPrefixer from './index'
 

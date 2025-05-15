@@ -25,8 +25,8 @@ yarn add jss-preset-default
 Then setup JSS to use it:
 
 ```javascript
-import jss from 'jss'
-import preset from 'jss-preset-default'
+import jss from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 
 jss.setup(preset())
 
@@ -52,8 +52,8 @@ sheet.toString()
 You can use JSS with or without [plugins](https://github.com/cssinjs?q=plugin). Make sure you use the plugins in the [right order](https://github.com/cssinjs/jss/blob/master/docs/plugins.md#order-does-matter) or use a [preset](https://github.com/cssinjs/jss/tree/master/packages/jss-preset-default) for quick setup with default plugins.
 
 ```javascript
-import jss from 'jss'
-import camelCase from 'jss-plugin-camel-case'
+import jss from '@secure-jss/jss'
+import camelCase from '@secure-jss/jss-plugin-camel-case'
 import somePlugin from 'jss-some-plugin'
 
 // Use plugins.
@@ -92,7 +92,7 @@ You can specify an `insertionPoint` during [jss.setup()](https://github.com/cssi
 ```
 
 ```js
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 jss.setup({insertionPoint: 'custom-insertion-point'})
 ```
@@ -111,7 +111,7 @@ Here is another example, with the insertion point moved to the `body`:
 ```
 
 ```js
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 jss.setup({
   insertionPoint: document.getElementById('insertion-point')

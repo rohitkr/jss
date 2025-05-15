@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import expect from 'expect.js'
 import TestRenderer from 'react-test-renderer'
-import {create as createJss} from 'jss'
-import {create as createCss} from 'css-jss'
+import {create as createJss} from '@secure-jss/jss'
+import {create as createCss} from '@secure-jss/css-jss'
 import {create as createJsx} from './jsx'
 import {createGenerateId} from '../../../tests/utils'
 
@@ -41,6 +41,17 @@ describe('React-JSS: jsx', () => {
           children: ['test2']
         }
       ]
+    })
+  })
+
+  it('should render <span> with css prop', () => {
+    const tree = TestRenderer.create(
+      React.createElement('span', {css: {color: 'red'}}, 'test1')
+    ).toJSON()
+    expect(tree).to.eql({
+      type: 'span',
+      props: {className: 'css-0'},
+      children: ['test1']
     })
   })
 })

@@ -1,13 +1,13 @@
 {
   "jss-plugin-isolate.js": {
-    "bundled": 14317,
-    "minified": 9461,
-    "gzipped": 2692
+    "bundled": 14331,
+    "minified": 9475,
+    "gzipped": 2704
   },
   "jss-plugin-isolate.min.js": {
-    "bundled": 14317,
-    "minified": 9461,
-    "gzipped": 2692
+    "bundled": 14331,
+    "minified": 9475,
+    "gzipped": 2704
   },
   "jss-plugin-isolate.cjs.js": {
     "bundled": 4129,

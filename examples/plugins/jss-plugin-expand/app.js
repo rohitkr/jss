@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginExpand from 'jss-plugin-expand'
+import jss from '@secure-jss/jss'
+import jssPluginExpand from '@secure-jss/jss-plugin-expand'
 
 const styles = {
   button: {

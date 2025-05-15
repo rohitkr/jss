@@ -1,4 +1,4 @@
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 import conditional from '../fixtures/conditional.json'
 import regular from '../fixtures/regular.json'
 

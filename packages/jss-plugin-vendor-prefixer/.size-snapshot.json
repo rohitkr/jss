@@ -1,30 +1,30 @@
 {
   "jss-plugin-vendor-prefixer.js": {
-    "bundled": 19054,
-    "minified": 6309,
-    "gzipped": 2510
+    "bundled": 81641,
+    "minified": 28879,
+    "gzipped": 8969
   },
   "jss-plugin-vendor-prefixer.min.js": {
-    "bundled": 19054,
-    "minified": 6309,
-    "gzipped": 2510
+    "bundled": 80093,
+    "minified": 28095,
+    "gzipped": 8612
   },
   "jss-plugin-vendor-prefixer.cjs.js": {
-    "bundled": 2098,
-    "minified": 1098,
-    "gzipped": 554
+    "bundled": 2110,
+    "minified": 1110,
+    "gzipped": 564
   },
   "jss-plugin-vendor-prefixer.esm.js": {
-    "bundled": 1474,
-    "minified": 640,
-    "gzipped": 371,
+    "bundled": 1486,
+    "minified": 652,
+    "gzipped": 379,
     "treeshaked": {
       "rollup": {
-        "code": 31,
-        "import_statements": 31
+        "code": 43,
+        "import_statements": 43
       },
       "webpack": {
-        "code": 1048
+        "code": 1060
       }
     }
   }

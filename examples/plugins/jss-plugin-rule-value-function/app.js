@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginRuleValueFunction from 'jss-plugin-rule-value-function'
+import jss from '@secure-jss/jss'
+import jssPluginRuleValueFunction from '@secure-jss/jss-plugin-rule-value-function'
 
 const styles = {
   button: {

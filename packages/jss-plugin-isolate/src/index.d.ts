@@ -1,4 +1,4 @@
-import {Plugin} from 'jss'
+import {Plugin} from '@secure-jss/jss'
 
 type Options = {
   isolate?: boolean | string

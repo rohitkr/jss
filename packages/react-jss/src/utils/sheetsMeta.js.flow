@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {StyleSheet} from 'jss'
+import type {StyleSheet} from '@secure-jss/jss'
 import type {StaticStyles, DynamicStyle} from '../flow-types'
 
 type SheetMeta<Data = {}> = {|

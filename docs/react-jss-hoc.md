@@ -21,7 +21,7 @@ Try it out in the [playground](https://codesandbox.io/s/j3l06yyqpw).
 ```javascript
 import React from 'react'
 import {render} from 'react-dom'
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 // Create your Styles. Remember, since React-JSS uses the default preset,
 // most plugins are available without further configuration needed.
@@ -95,7 +95,7 @@ To inject the theme into the wrapped component, pass the `injectTheme` option to
 
 ```javascript
 import React from 'react'
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 const DeleteIcon = () => null
 
@@ -125,7 +125,7 @@ In case you need to access the theme but not render any CSS, you can also use `w
 
 ```javascript
 import React from 'react'
-import {withTheme} from 'react-jss'
+import {withTheme} from '@secure-jss/react-jss'
 
 const Button = withTheme(({theme}) => <button>I can access {theme.colorPrimary}</button>)
 ```
@@ -133,7 +133,7 @@ const Button = withTheme(({theme}) => <button>I can access {theme.colorPrimary}<
 ## The inner component
 
 ```javascript
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 const InnerComponent = () => null
 const StyledComponent = withStyles({})(InnerComponent)
@@ -147,7 +147,7 @@ We will forward the ref to the inner component.
 
 ```javascript
 import React from 'react'
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 const InnerComponent = () => null
 const StyledComponent = withStyles({})(InnerComponent)
@@ -169,7 +169,7 @@ You will need [babel-plugin-transform-decorators-legacy](https://github.com/loga
 
 ```javascript
 import React, {Component} from 'react'
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 const styles = {
   button: {
@@ -204,7 +204,7 @@ Example
 
 ```javascript
 import React from 'react'
-import withStyles from 'react-jss'
+import withStyles from '@secure-jss/react-jss'
 
 const labelStyles = {}
 const buttonStyles = {}
@@ -231,7 +231,7 @@ Example
 
 ```typescript
 import * as React from 'react'
-import withStyles, {WithStylesProps} from 'react-jss'
+import withStyles, {WithStylesProps} from '@secure-jss/react-jss'
 
 const styles = {
   button: {

@@ -43,7 +43,7 @@ yarn add react-jss
 ```javascript
 import React from 'react'
 import {render} from 'react-dom'
-import {createUseStyles} from 'react-jss'
+import {createUseStyles} from '@secure-jss/react-jss'
 
 // Create your Styles. Remember, since React-JSS uses the default preset,
 // most plugins are available without further configuration needed.
@@ -118,7 +118,7 @@ Static properties being rendered first so that function values will have higher 
 
 ```javascript
 import React from 'react'
-import {createUseStyles} from 'react-jss'
+import {createUseStyles} from '@secure-jss/react-jss'
 
 const useStyles = createUseStyles({
   myButton: {
@@ -178,7 +178,7 @@ and
 
 ```javascript
 import React from 'react'
-import {createUseStyles} from 'react-jss'
+import {createUseStyles} from '@secure-jss/react-jss'
 
 const useStyles = createUseStyles(
   {
@@ -254,7 +254,7 @@ Usage of `ThemeProvider`:
 
 ```javascript
 import React from 'react'
-import {createUseStyles, useTheme, ThemeProvider} from 'react-jss'
+import {createUseStyles, useTheme, ThemeProvider} from '@secure-jss/react-jss'
 
 // Using `theme` function is better when you have many theme dependant styles.
 // Note that in this case you don't need to use useTheme(), it subscribes to the them automatically
@@ -315,7 +315,7 @@ Use _namespaced_ themes so that a set of UI components gets no conflicts with an
 
 ```javascript
 import React from 'react'
-import {createUseStyles, createTheming} from 'react-jss'
+import {createUseStyles, createTheming} from '@secure-jss/react-jss'
 
 const ThemeContext = React.createContext({})
 
@@ -369,8 +369,8 @@ Make sure using the same setup on the server and on the client. Id generator is 
    ```javascript
    import React from 'react'
    import ReactDOM from 'react-dom'
-   import {JssProvider} from 'react-jss'
-   import MyApp from './MyApp'
+   import {JssProvider} from '@secure-jss/react-jss'
+   import MyApp from './MyApp.js'
 
    const generateId = (rule, sheet) => 'some-id'
    ReactDOM.render(
@@ -388,8 +388,8 @@ Make sure using the same setup on the server and on the client. Id generator is 
    ```javascript
    import React from 'react'
    import ReactDOM from 'react-dom'
-   import {JssProvider} from 'react-jss'
-   import MyApp from './MyApp'
+   import {JssProvider} from '@secure-jss/react-jss'
+   import MyApp from './MyApp.js'
 
    ReactDOM.render(
      <JssProvider id={{minify: true}}>
@@ -406,8 +406,8 @@ After the application is mounted, you should remove the style tag used by critic
 ```javascript
 import React from 'react'
 import {renderToString} from 'react-dom/server'
-import {JssProvider, SheetsRegistry, createGenerateId} from 'react-jss'
-import MyApp from './MyApp'
+import {JssProvider, SheetsRegistry, createGenerateId} from '@secure-jss/react-jss'
+import MyApp from './MyApp.js'
 
 export default function render(req, res) {
   const sheets = new SheetsRegistry()
@@ -444,8 +444,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import bootstrapper from 'react-async-bootstrapper'
 
-import {JssProvider} from 'react-jss'
-import MyApp from './MyApp'
+import {JssProvider} from '@secure-jss/react-jss'
+import MyApp from './MyApp.js'
 
 const App = ({disableStylesGeneration}) => (
   <JssProvider disableStylesGeneration>
@@ -467,9 +467,9 @@ If you want to specify a JSS version and plugins to use, you should create your 
 
 ```javascript
 import React from 'react'
-import {create as createJss} from 'jss'
-import {JssProvider} from 'react-jss'
-import vendorPrefixer from 'jss-plugin-vendor-prefixer'
+import {create as createJss} from '@secure-jss/jss'
+import {JssProvider} from '@secure-jss/react-jss'
+import vendorPrefixer from '@secure-jss/jss-plugin-vendor-prefixer'
 
 const jss = createJss()
 jss.use(vendorPrefixer())
@@ -485,7 +485,7 @@ const Component = () => (
 You can also access the default JSS instance.
 
 ```javascript
-import {jss} from 'react-jss'
+import {jss} from '@secure-jss/react-jss'
 ```
 
 ## Multi-tree setup
@@ -496,7 +496,7 @@ In case you render multiple react rendering trees in one application, you will g
 
 ```javascript
 import React from 'react'
-import {createGenerateId, JssProvider} from 'react-jss'
+import {createGenerateId, JssProvider} from '@secure-jss/react-jss'
 
 const generateId = createGenerateId()
 const App1 = () => null
@@ -519,7 +519,7 @@ This way you can see which app generated a class name in the DOM view.
 
 ```javascript
 import React from 'react'
-import {JssProvider} from 'react-jss'
+import {JssProvider} from '@secure-jss/react-jss'
 
 const App1 = () => null
 const App2 = () => null
@@ -545,7 +545,7 @@ Example
 
 ```javascript
 import React from 'react'
-import {createUseStyles} from 'react-jss'
+import {createUseStyles} from '@secure-jss/react-jss'
 
 // Will render first once component mounts, because `createUseStyles()` call order matters.
 const useLabelStyles = createUseStyles({

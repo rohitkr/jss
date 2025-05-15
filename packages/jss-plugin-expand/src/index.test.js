@@ -1,7 +1,7 @@
 import expect from 'expect.js'
 import Observable from 'zen-observable'
-import {create} from 'jss'
-import observablePlugin from 'jss-plugin-rule-value-observable'
+import {create} from '@secure-jss/jss'
+import observablePlugin from '@secure-jss/jss-plugin-rule-value-observable'
 
 import expand from '.'
 

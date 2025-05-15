@@ -1,7 +1,7 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import {create} from 'jss'
-import pluginCompose from 'jss-plugin-compose'
+import {create} from '@secure-jss/jss'
+import pluginCompose from '@secure-jss/jss-plugin-compose'
 import pluginFunction from '.'
 
 const settings = {createGenerateId: () => (rule) => `${rule.key}-id`}

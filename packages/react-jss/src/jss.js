@@ -1,4 +1,4 @@
-import {create} from 'jss'
-import preset from 'jss-preset-default'
+import {create} from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 
 export default create(preset())

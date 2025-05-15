@@ -1,13 +1,13 @@
 {
   "jss-plugin-expand.js": {
-    "bundled": 10534,
-    "minified": 4546,
-    "gzipped": 1534
+    "bundled": 10548,
+    "minified": 4560,
+    "gzipped": 1546
   },
   "jss-plugin-expand.min.js": {
-    "bundled": 10534,
-    "minified": 4546,
-    "gzipped": 1534
+    "bundled": 10548,
+    "minified": 4560,
+    "gzipped": 1546
   },
   "jss-plugin-expand.cjs.js": {
     "bundled": 9485,

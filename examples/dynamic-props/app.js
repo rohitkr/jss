@@ -1,4 +1,4 @@
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 // Styles
 const styles = {
@@ -31,6 +31,6 @@ function setColor(e) {
 
 const toArray = Array.prototype.slice
 const buttons = toArray.call(document.querySelectorAll('button'))
-buttons.forEach(button => {
+buttons.forEach((button) => {
   button.addEventListener('click', setColor)
 })

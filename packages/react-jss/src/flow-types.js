@@ -7,7 +7,7 @@ import type {
   BaseRule,
   CreateGenerateIdOptions,
   GenerateId
-} from 'jss'
+} from '@secure-jss/jss'
 import type {Node} from 'react'
 import type {Theming} from 'theming'
 

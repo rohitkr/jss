@@ -1,5 +1,5 @@
 import $$observable from 'symbol-observable'
-import {createRule} from 'jss'
+import {createRule} from '@secure-jss/jss'
 
 const isObservable = (value) => value && value[$$observable] && value === value[$$observable]()
 

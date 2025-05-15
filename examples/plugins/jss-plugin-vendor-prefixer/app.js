@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginVendorPrefixer from 'jss-plugin-vendor-prefixer'
+import jss from '@secure-jss/jss'
+import jssPluginVendorPrefixer from '@secure-jss/jss-plugin-vendor-prefixer'
 
 const styles = {
   button: {

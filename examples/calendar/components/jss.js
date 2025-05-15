@@ -1,10 +1,10 @@
 // Setup jss plugins.
-import {create} from 'jss'
-import extend from 'jss-plugin-extend'
-import nested from 'jss-plugin-nested'
-import camelCase from 'jss-plugin-camel-case'
-import defaultUnit from 'jss-plugin-default-unit'
-import vendorPrefixer from 'jss-plugin-vendor-prefixer'
+import {create} from '@secure-jss/jss'
+import extend from '@secure-jss/jss-plugin-extend'
+import nested from '@secure-jss/jss-plugin-nested'
+import camelCase from '@secure-jss/jss-plugin-camel-case'
+import defaultUnit from '@secure-jss/jss-plugin-default-unit'
+import vendorPrefixer from '@secure-jss/jss-plugin-vendor-prefixer'
 
 const jss = create()
 

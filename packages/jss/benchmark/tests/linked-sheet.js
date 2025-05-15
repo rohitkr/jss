@@ -1,4 +1,4 @@
-import jss, {sheets} from 'jss'
+import jss, {sheets} from '@secure-jss/jss'
 
 function teardown() {
   this.sheets.reset()

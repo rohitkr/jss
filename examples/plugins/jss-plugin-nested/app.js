@@ -1,5 +1,5 @@
-import jss from 'jss'
-import jssPluginNested from 'jss-plugin-nested'
+import jss from '@secure-jss/jss'
+import jssPluginNested from '@secure-jss/jss-plugin-nested'
 
 const styles = {
   square: {

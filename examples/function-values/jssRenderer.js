@@ -1,5 +1,5 @@
-import jss from 'jss'
-import preset from 'jss-preset-default'
+import jss from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 import times from 'lodash/times'
 import {getRandomColor, getRandomTransform} from './utils'
 
@@ -8,7 +8,7 @@ jss.setup(preset())
 let container
 let sheet
 
-const createStyleSheet = styles => {
+const createStyleSheet = (styles) => {
   if (sheet) sheet.detach()
   sheet = jss.createStyleSheet(styles, {link: true}).attach()
 }
@@ -22,10 +22,10 @@ export const destroy = () => {
   if (container) container.parentNode.removeChild(container)
 }
 
-export const render = amount => {
+export const render = (amount) => {
   const styles = {}
 
-  times(amount, i => {
+  times(amount, (i) => {
     styles[`object-${i}`] = {
       position: 'absolute',
       width: 50,
@@ -42,7 +42,7 @@ export const render = amount => {
   ensureContainer()
   container.innerHTML = times(
     amount,
-    i => `<div class="${sheet.classes[`object-${i}`]}"></div>`
+    (i) => `<div class="${sheet.classes[`object-${i}`]}"></div>`
   ).join('')
 }
 

@@ -1,4 +1,4 @@
-import {Plugin, UpdateOptions} from 'jss'
+import {Plugin, UpdateOptions} from '@secure-jss/jss'
 
 export type Options = UpdateOptions
 

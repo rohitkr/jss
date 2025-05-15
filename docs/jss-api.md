@@ -5,14 +5,14 @@
 There is a global Jss instance which is the default export of the package. You can also create your own local Jss instance.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 ```
 
 ## Quick setup with preset
 
 ```javascript
-import preset from 'jss-preset-default'
-import jss from 'jss'
+import preset from '@secure-jss/jss-preset-default'
+import jss from '@secure-jss/jss'
 
 jss.setup(preset())
 ```
@@ -26,8 +26,8 @@ Use an own instance if the component you build should be reusable within a diffe
 See `jss.setup()` below for `options` object description.
 
 ```javascript
-import {create} from 'jss'
-import camelCase from 'jss-plugin-camel-case'
+import {create} from '@secure-jss/jss'
+import camelCase from '@secure-jss/jss-plugin-camel-case'
 import somePlugin from 'jss-some-plugin'
 
 const jss = create()
@@ -60,8 +60,8 @@ See [setup examples](./setup.md#specify-dom-insertion-point).
 `jss.use(plugin)`
 
 ```javascript
-import global from 'jss-plugin-global'
-import jss from 'jss'
+import global from '@secure-jss/jss-plugin-global'
+import jss from '@secure-jss/jss'
 
 jss.use(global())
 ```
@@ -83,7 +83,7 @@ Options:
 - `classNamePrefix` - a string, which gets added at the beginning of the class name.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss
   .createStyleSheet(
@@ -126,7 +126,7 @@ In case you are using the `SheetsRegistry` in the browser and you want to get St
 If you want to remove whitespaces - use option `format`, which is `true` by default.
 
 ```javascript
-import jss, {SheetsRegistry} from 'jss'
+import jss, {SheetsRegistry} from '@secure-jss/jss'
 
 const sheets = new SheetsRegistry()
 const sheet = jss.createStyleSheet()
@@ -144,7 +144,7 @@ sheets.toString({format: false}) // Returns a CSS string without unnecessary whi
 Counts how many elements use the same Style Sheet and automatically attach or detach it. It also acts similar to a WeakMap, because one can use an object as a key. React-JSS is using a `theme` object as a key to identify a sheet by a theme.
 
 ```javascript
-import jss, {SheetsManager} from 'jss'
+import jss, {SheetsManager} from '@secure-jss/jss'
 
 const manager = new SheetsManager()
 console.log(manager.size) // 0
@@ -184,7 +184,7 @@ Detaching unused Style Sheets will speed up every DOM node insertion and manipul
 Sheet 1 has a higher index (priority), and as such will come **after** sheet 2 in the resulting DOM.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet1 = jss.createStyleSheet({}, {index: 5, meta: 'sheet-1'}).attach()
 const sheet2 = jss.createStyleSheet({}, {index: 1, meta: 'sheet-2'}).attach()
@@ -216,7 +216,7 @@ Same as `sheet.addRule(...)` but replaces a rule with the same name if found.
 ### Add a rule dynamically
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss.createStyleSheet({})
 const rule = sheet.addRule({
@@ -240,7 +240,7 @@ Returns `true` if the rule gets removed from the DOM.
 Access a rule within sheet by a name.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss.createStyleSheet({myButton: {}})
 // Using name.
@@ -254,7 +254,7 @@ const rule = sheet.getRule('myButton')
 In case you want to add rules to the sheet separately or even at runtime.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss.createStyleSheet({})
 sheet.addRules({
@@ -274,7 +274,7 @@ sheet.addRules({
 If you use [function values](./jss-syntax.md#function-values), you will want to update them with new data. This method will call all your function values, pass the `data` param and update the CSS Rule if needed.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const styles = {
   container: {
@@ -305,7 +305,7 @@ sheet.update({
 Apply styles directly to the element but still be able to use JSS.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const rule = jss.createRule({
   padding: 20,
@@ -314,7 +314,7 @@ const rule = jss.createRule({
 ```
 
 ```js
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const rule = jss.createRule('@media', {
   button: {
@@ -330,7 +330,7 @@ const rule = jss.createRule('@media', {
 This is equivalent to `element.style.background = 'blue'` except that you could use a rule from a sheet which is already defined. It uses `rule.toJSON()` internally, so same limitations are applied. [Example](http://cssinjs.github.io/examples/inline/index.html).
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const element = document.getElementById('element')
 jss
@@ -347,7 +347,7 @@ jss
 When the `link` option is true, after Style Sheet is attached, linker saves references to `CSSRule` instances so that you can set rule properties at any time. [Example](http://cssinjs.github.io/examples/dynamic-props/index.html).
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss.createStyleSheet(
   {
@@ -382,7 +382,7 @@ It is used by `rule.applyTo()`.
 To get a pure CSS string from JSS, e.g. when preprocessing server side.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const sheet = jss.createStyleSheet({
   button: {
@@ -408,7 +408,7 @@ Option `createGenerateId` allows you to specify a function which returns a class
 By default class names generator uses a simple counter to ensure uniqueness of the class names. It consists of `classNamePrefix` Style Sheet option + rule name + counter. **Note**: in production (`NODE_ENV=production`) it uses just the `c` + rules counter.
 
 ```javascript
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 
 const createGenerateId = () => {
   let counter = 0
@@ -440,7 +440,7 @@ When you want to minify your selectors in production for example, you can config
 > Note: This is disabled by default.
 
 ```js
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 // Pass the id option to jss.setup and set minify to true.
 jss.setup({id: {minify: true}})
 ```
@@ -452,7 +452,7 @@ jss.setup({id: {minify: true}})
 Extracts a styles object with only props that contain function values. Useful when you want to share a static part between different elements and render only the dynamic styles separate for each element.
 
 ```javascript
-import {getDynamicStyles} from 'jss'
+import {getDynamicStyles} from '@secure-jss/jss'
 
 const dynamicStyles = getDynamicStyles({
   button: {

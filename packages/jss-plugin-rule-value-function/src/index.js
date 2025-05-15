@@ -1,5 +1,5 @@
 import warning from 'tiny-warning'
-import {createRule} from 'jss'
+import {createRule} from '@secure-jss/jss'
 
 // A symbol replacement.
 let now = Date.now()

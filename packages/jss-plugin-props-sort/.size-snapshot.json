@@ -1,13 +1,13 @@
 {
   "jss-plugin-props-sort.js": {
-    "bundled": 1069,
-    "minified": 548,
-    "gzipped": 338
+    "bundled": 1083,
+    "minified": 562,
+    "gzipped": 349
   },
   "jss-plugin-props-sort.min.js": {
-    "bundled": 1069,
-    "minified": 548,
-    "gzipped": 338
+    "bundled": 1083,
+    "minified": 562,
+    "gzipped": 349
   },
   "jss-plugin-props-sort.cjs.js": {
     "bundled": 673,

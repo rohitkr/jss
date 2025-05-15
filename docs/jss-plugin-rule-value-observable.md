@@ -53,17 +53,17 @@ const styles = {
 By default, the plugin gets applied to the values or rules returned from Observables. If you want to turn the processing of for performance reasons, you can pass an option `process: false`.
 
 ```javascript
-import jss from 'jss'
-import pluginObservable from 'jss-plugin-rule-value-observable'
-import pluginCamelCase from 'jss-plugin-camel-case'
-import pluginDefaultUnit from 'jss-plugin-default-unit'
+import jss from '@secure-jss/jss'
+import pluginObservable from '@secure-jss/jss-plugin-rule-value-observable'
+import pluginCamelCase from '@secure-jss/jss-plugin-camel-case'
+import pluginDefaultUnit from '@secure-jss/jss-plugin-default-unit'
 
 jss.use(pluginObservable({process: false}), pluginCamelCase(), pluginDefaultUnit())
 ```
 
 ```javascript
-import jss from 'jss'
-import preset from 'jss-preset-default'
+import jss from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 
 jss.setup(
   preset({

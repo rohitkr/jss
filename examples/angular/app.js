@@ -1,4 +1,4 @@
-import jss from 'jss'
+import jss from '@secure-jss/jss'
 import angular from 'angular'
 
 // Styles
@@ -17,6 +17,6 @@ const styles = {
 // Application logic.
 const sheet = jss.createStyleSheet(styles).attach()
 
-angular.module('myApp', []).controller('myController', $scope => {
+angular.module('myApp', []).controller('myController', ($scope) => {
   $scope.classes = sheet.classes
 })

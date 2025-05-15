@@ -1,5 +1,5 @@
-import {create as createJss} from 'jss'
-import preset from 'jss-preset-default'
+import {create as createJss} from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 
 // I have been trying to benchmark and I have seen a slow down after about 10k rules.
 // Since we are in a single sheet mode, user shouldn't care about this.

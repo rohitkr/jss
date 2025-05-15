@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react'
-import type {Jss, GenerateId, SheetsRegistry, CreateGenerateIdOptions} from 'jss'
+import type {Jss, GenerateId, SheetsRegistry, CreateGenerateIdOptions} from '@secure-jss/jss'
 
 type Props = {|
   jss?: Jss,

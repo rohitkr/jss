@@ -1,7 +1,7 @@
 import {fromEvent} from 'rxjs'
 import {switchMap, map, takeUntil} from 'rxjs/operators'
-import jss from 'jss'
-import preset from 'jss-preset-default'
+import jss from '@secure-jss/jss'
+import preset from '@secure-jss/jss-preset-default'
 
 jss.setup(preset())
 
@@ -11,7 +11,7 @@ const renderBox = () => {
   return box
 }
 
-const getPosition = box => {
+const getPosition = (box) => {
   // Create event streams. Note no event listeners are created at this point.
   const mousedown$ = fromEvent(box, 'mousedown')
   const mousemove$ = fromEvent(box.ownerDocument, 'mousemove')
@@ -19,7 +19,7 @@ const getPosition = box => {
 
   // Now mousedown event listener will be created.
   return mousedown$.pipe(
-    switchMap(md => {
+    switchMap((md) => {
       const startX = md.clientX + window.scrollX
       const startY = md.clientY + window.scrollY
       const style = getComputedStyle(md.target)
@@ -29,7 +29,7 @@ const getPosition = box => {
       // Now mousemove event listener is will be created.
       return mousemove$.pipe(
         // Convert the event to object to a position object.
-        map(mm => ({
+        map((mm) => ({
           left: startLeft + mm.clientX - startX,
           top: startTop + mm.clientY - startY
         })),
@@ -40,7 +40,7 @@ const getPosition = box => {
   )
 }
 
-const renderStyles = pos$ => {
+const renderStyles = (pos$) => {
   // Create the style sheet.
   const {classes} = jss
     .createStyleSheet(
@@ -55,8 +55,8 @@ const renderStyles = pos$ => {
           display: 'flex',
           'align-items': 'center',
           'justify-content': 'center',
-          top: pos$.pipe(map(pos => pos.top)),
-          left: pos$.pipe(map(pos => pos.left))
+          top: pos$.pipe(map((pos) => pos.top)),
+          left: pos$.pipe(map((pos) => pos.left))
         }
         // Use option `link: true` in order to connect CSSStyleRule with the JSS StyleRule.
       },

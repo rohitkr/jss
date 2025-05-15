@@ -2,10 +2,10 @@
 
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import jssExtend from 'jss-plugin-extend'
-import {create} from 'jss'
+import jssExtend from '@secure-jss/jss-plugin-extend'
+import {create} from '@secure-jss/jss'
 import sinon from 'sinon'
-import functionPlugin from 'jss-plugin-rule-value-function'
+import functionPlugin from '@secure-jss/jss-plugin-rule-value-function'
 import nested from '.'
 
 const settings = {

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 import expect from 'expect.js'
-import {create} from 'jss'
+import {create} from '@secure-jss/jss'
 
 import cache from './index'
 
