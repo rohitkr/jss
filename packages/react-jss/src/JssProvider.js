@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import {shallowEqualObjects} from 'shallow-equal'
-import {createGenerateId} from '@secure-jss/jss'
+import {createGenerateId} from '@rohitkr/jss'
 import JssContext from './JssContext'
 
 const initialContext = {}

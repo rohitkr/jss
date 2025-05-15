@@ -1,7 +1,7 @@
 {
-  "name": "@secure-jss/jss-plugin-props-sort",
+  "name": "@rohitkr/jss-plugin-props-sort",
   "description": "JSS plugin that ensures style properties extend each other instead of override",
-  "version": "10.10.0",
+  "version": "10.11.0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-plugin-props-sort",
   "main": "dist/jss-plugin-props-sort.cjs.js",
@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "@secure-jss/jss": "10.10.0"
+    "@rohitkr/jss": "^10.11.0"
   }
 }

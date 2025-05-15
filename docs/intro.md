@@ -30,8 +30,8 @@ https://cssinjs.org/repl
 ## JSS Example
 
 ```javascript
-import jss from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 import color from 'color'
 
 // One time setup with default plugins and settings.
@@ -85,7 +85,7 @@ document.body.innerHTML = `
 ```javascript
 import React from 'react'
 import {render} from 'react-dom'
-import {createUseStyles} from '@secure-jss/react-jss'
+import {createUseStyles} from '@rohitkr/react-jss'
 
 // Create your Styles. Remember, since React-JSS uses the default preset,
 // most plugins are available without further configuration needed.

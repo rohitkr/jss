@@ -1,6 +1,6 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import sinon from 'sinon'
 import functionPlugin from '.'
 

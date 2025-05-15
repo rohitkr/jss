@@ -1,6 +1,6 @@
 /* eslint-disable prefer-rest-params, prefer-spread */
 import * as React from 'react'
-import defaultCss from '@secure-jss/css-jss'
+import defaultCss from '@rohitkr/css-jss'
 
 export const create = (css = defaultCss) =>
   function createElement(type, props) {

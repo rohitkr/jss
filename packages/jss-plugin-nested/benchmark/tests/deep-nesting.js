@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 
 import nested from '../../src/index'
 

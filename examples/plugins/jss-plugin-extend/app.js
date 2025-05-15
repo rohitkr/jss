@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginExtend from '@secure-jss/jss-plugin-extend'
+import jss from '@rohitkr/jss'
+import jssPluginExtend from '@rohitkr/jss-plugin-extend'
 
 const button0 = {
   padding: '20px',

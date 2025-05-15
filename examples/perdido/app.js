@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPreset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import jssPreset from '@rohitkr/jss-preset-default'
 import styles from './styles'
 
 jss.setup(jssPreset())

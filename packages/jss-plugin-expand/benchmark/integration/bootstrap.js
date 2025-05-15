@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import jssExpand from '../../src'
 import styles from '../fixtures/bootstrap.json'
 

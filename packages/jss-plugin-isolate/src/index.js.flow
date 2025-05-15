@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {Plugin} from '@secure-jss/jss'
+import type {Plugin} from '@rohitkr/jss'
 
 type Options = {
   isolate?: boolean | string,

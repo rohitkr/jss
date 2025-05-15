@@ -1,7 +1,7 @@
 import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
-import {create} from '@secure-jss/jss'
-import functionPlugin from '@secure-jss/jss-plugin-rule-value-function'
+import {create} from '@rohitkr/jss'
+import functionPlugin from '@rohitkr/jss-plugin-rule-value-function'
 
 import camelCase from './index'
 

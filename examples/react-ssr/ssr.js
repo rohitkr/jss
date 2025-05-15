@@ -1,6 +1,6 @@
 import React from 'react'
 import {renderToString} from 'react-dom/server'
-import {JssProvider, SheetsRegistry} from '@secure-jss/react-jss'
+import {JssProvider, SheetsRegistry} from '@rohitkr/react-jss'
 import Button from './src/Button'
 
 export default function render() {

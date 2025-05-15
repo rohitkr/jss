@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import jssExpand from '../../src'
 import stylesWithoutPlugin from '../fixtures/sheet-without-plugin.json'
 import stylesWithPlugin from '../fixtures/sheet-with-plugin.json'

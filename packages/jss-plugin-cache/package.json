@@ -1,7 +1,7 @@
 {
-  "name": "@secure-jss/jss-plugin-cache",
+  "name": "@rohitkr/jss-plugin-cache",
   "description": "JSS plugin that caches the rules and delivers insane performance.",
-  "version": "10.10.0",
+  "version": "10.11.0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-plugin-cache",
   "main": "dist/jss-plugin-cache.cjs.js",
@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "@secure-jss/jss": "10.10.0"
+    "@rohitkr/jss": "^10.11.0"
   }
 }

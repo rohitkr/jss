@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 
 console.warn(`The JSS Starter Kit is for learning and experimentation.  It's not optimized for production deployment.
 
@@ -9,22 +9,22 @@ jss.setup(preset())
 
 export {jss as default, preset}
 
-export * from '@secure-jss/jss'
-export * from '@secure-jss/react-jss'
+export * from '@rohitkr/jss'
+export * from '@rohitkr/react-jss'
 
-export {default as withStyles} from '@secure-jss/react-jss'
+export {default as withStyles} from '@rohitkr/react-jss'
 
-export {default as functions} from '@secure-jss/jss-plugin-rule-value-function'
-export {default as observable} from '@secure-jss/jss-plugin-rule-value-observable'
-export {default as template} from '@secure-jss/jss-plugin-template'
-export {default as global} from '@secure-jss/jss-plugin-global'
-export {default as extend} from '@secure-jss/jss-plugin-extend'
-export {default as nested} from '@secure-jss/jss-plugin-nested'
-export {default as compose} from '@secure-jss/jss-plugin-compose'
-export {default as camelCase} from '@secure-jss/jss-plugin-camel-case'
-export {default as defaultUnit} from '@secure-jss/jss-plugin-default-unit'
-export {default as expand} from '@secure-jss/jss-plugin-expand'
-export {default as vendorPrefixer} from '@secure-jss/jss-plugin-vendor-prefixer'
-export {default as propsSort} from '@secure-jss/jss-plugin-props-sort'
-export {default as isolate} from '@secure-jss/jss-plugin-isolate'
-export {default as cache} from '@secure-jss/jss-plugin-cache'
+export {default as functions} from '@rohitkr/jss-plugin-rule-value-function'
+export {default as observable} from '@rohitkr/jss-plugin-rule-value-observable'
+export {default as template} from '@rohitkr/jss-plugin-template'
+export {default as global} from '@rohitkr/jss-plugin-global'
+export {default as extend} from '@rohitkr/jss-plugin-extend'
+export {default as nested} from '@rohitkr/jss-plugin-nested'
+export {default as compose} from '@rohitkr/jss-plugin-compose'
+export {default as camelCase} from '@rohitkr/jss-plugin-camel-case'
+export {default as defaultUnit} from '@rohitkr/jss-plugin-default-unit'
+export {default as expand} from '@rohitkr/jss-plugin-expand'
+export {default as vendorPrefixer} from '@rohitkr/jss-plugin-vendor-prefixer'
+export {default as propsSort} from '@rohitkr/jss-plugin-props-sort'
+export {default as isolate} from '@rohitkr/jss-plugin-isolate'
+export {default as cache} from '@rohitkr/jss-plugin-cache'

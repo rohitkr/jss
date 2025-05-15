@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginCamelCase from '@secure-jss/jss-plugin-camel-case'
+import jss from '@rohitkr/jss'
+import jssPluginCamelCase from '@rohitkr/jss-plugin-camel-case'
 
 const styles = {
   button: {

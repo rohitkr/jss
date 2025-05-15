@@ -1,13 +1,13 @@
 {
   "jss-plugin-cache.js": {
-    "bundled": 1146,
-    "minified": 586,
-    "gzipped": 371
+    "bundled": 1144,
+    "minified": 584,
+    "gzipped": 369
   },
   "jss-plugin-cache.min.js": {
-    "bundled": 1146,
-    "minified": 586,
-    "gzipped": 371
+    "bundled": 1144,
+    "minified": 584,
+    "gzipped": 369
   },
   "jss-plugin-cache.cjs.js": {
     "bundled": 742,

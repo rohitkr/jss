@@ -1,5 +1,5 @@
 import React from 'react'
-import injectSheet from '@secure-jss/react-jss'
+import injectSheet from '@rohitkr/react-jss'
 
 const styles = {
   button: {

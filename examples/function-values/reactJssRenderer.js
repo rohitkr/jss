@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import injectSheet from '@secure-jss/react-jss'
+import injectSheet from '@rohitkr/react-jss'
 import times from 'lodash/times'
 import {getRandomColor, getRandomTransform} from './utils'
 

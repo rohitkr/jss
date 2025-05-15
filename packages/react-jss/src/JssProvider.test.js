@@ -3,9 +3,9 @@
 import expect from 'expect.js'
 import * as React from 'react'
 import {stripIndent} from 'common-tags'
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import TestRenderer from 'react-test-renderer'
-import preset from '@secure-jss/jss-preset-default'
+import preset from '@rohitkr/jss-preset-default'
 
 import {SheetsRegistry, JssProvider, withStyles} from '.'
 

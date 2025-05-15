@@ -11,7 +11,7 @@ It exports a default function which accepts options. Options is a map of plugin 
 It returns a JSS options object, which you can pass to JSS constructor or the `setup`.
 
 ```javascript
-import preset from '@secure-jss/jss-preset-default'
+import preset from '@rohitkr/jss-preset-default'
 
 preset({somePlugin: {}})
 ```
@@ -19,8 +19,8 @@ preset({somePlugin: {}})
 ### Setup global JSS instance
 
 ```javascript
-import jss from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 
 jss.setup(preset())
 ```
@@ -28,8 +28,8 @@ jss.setup(preset())
 ### Setup custom JSS instance
 
 ```javascript
-import {create} from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import {create} from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 
 const jss = create(preset())
 ```

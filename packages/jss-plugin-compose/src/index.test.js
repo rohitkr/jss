@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 import expect from 'expect.js'
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import sinon from 'sinon'
 import compose from '.'
 

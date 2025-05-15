@@ -1,30 +1,30 @@
 {
   "css-jss.js": {
-    "bundled": 122358,
-    "minified": 44559,
-    "gzipped": 13664
+    "bundled": 3669,
+    "minified": 1317,
+    "gzipped": 714
   },
   "css-jss.min.js": {
-    "bundled": 120037,
-    "minified": 43284,
-    "gzipped": 13111
+    "bundled": 3669,
+    "minified": 1317,
+    "gzipped": 714
   },
   "css-jss.cjs.js": {
-    "bundled": 3063,
-    "minified": 1213,
-    "gzipped": 675
+    "bundled": 3057,
+    "minified": 1207,
+    "gzipped": 674
   },
   "css-jss.esm.js": {
-    "bundled": 2772,
-    "minified": 987,
-    "gzipped": 584,
+    "bundled": 2766,
+    "minified": 981,
+    "gzipped": 585,
     "treeshaked": {
       "rollup": {
-        "code": 94,
-        "import_statements": 87
+        "code": 88,
+        "import_statements": 81
       },
       "webpack": {
-        "code": 1867
+        "code": 1861
       }
     }
   }

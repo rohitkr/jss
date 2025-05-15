@@ -126,7 +126,7 @@ After defining your custom theme type in `global.d.ts`, as shown above, you can 
 ```typescript
 // theme.tsx
 
-import {DefaultTheme} from '@secure-jss/react-jss'
+import {DefaultTheme} from '@rohitkr/react-jss'
 
 export const theme: DefaultTheme = {
   background: '#fafafa'

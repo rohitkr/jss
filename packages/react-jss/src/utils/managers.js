@@ -1,4 +1,4 @@
-import {SheetsManager} from '@secure-jss/jss'
+import {SheetsManager} from '@rohitkr/jss'
 
 const defaultManagers = new Map()
 

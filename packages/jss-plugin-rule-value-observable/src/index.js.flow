@@ -6,7 +6,7 @@ import type {
   Rule,
   BaseRule,
   StyleSheet
-} from '@secure-jss/jss'
+} from '@rohitkr/jss'
 
 export type Options = UpdateOptions
 

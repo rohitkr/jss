@@ -1,7 +1,7 @@
 {
-  "name": "@secure-jss/jss-preset-default",
+  "name": "@rohitkr/jss-preset-default",
   "description": "Default preset for JSS with selected plugins.",
-  "version": "10.10.0",
+  "version": "10.11.0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/jss-preset-default",
   "main": "dist/jss-preset-default.cjs.js",
@@ -34,18 +34,18 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "@secure-jss/jss": "10.10.0",
-    "@secure-jss/jss-plugin-camel-case": "10.10.0",
-    "@secure-jss/jss-plugin-compose": "10.10.0",
-    "@secure-jss/jss-plugin-default-unit": "10.10.0",
-    "@secure-jss/jss-plugin-expand": "10.10.0",
-    "@secure-jss/jss-plugin-extend": "10.10.0",
-    "@secure-jss/jss-plugin-global": "10.10.0",
-    "@secure-jss/jss-plugin-nested": "10.10.0",
-    "@secure-jss/jss-plugin-props-sort": "10.10.0",
-    "@secure-jss/jss-plugin-rule-value-function": "10.10.0",
-    "@secure-jss/jss-plugin-rule-value-observable": "10.10.0",
-    "@secure-jss/jss-plugin-template": "10.10.0",
-    "@secure-jss/jss-plugin-vendor-prefixer": "10.10.0"
+    "@rohitkr/jss": "^10.11.0",
+    "@rohitkr/jss-plugin-camel-case": "^10.11.0",
+    "@rohitkr/jss-plugin-compose": "^10.11.0",
+    "@rohitkr/jss-plugin-default-unit": "^10.11.0",
+    "@rohitkr/jss-plugin-expand": "^10.11.0",
+    "@rohitkr/jss-plugin-extend": "^10.11.0",
+    "@rohitkr/jss-plugin-global": "^10.11.0",
+    "@rohitkr/jss-plugin-nested": "^10.11.0",
+    "@rohitkr/jss-plugin-props-sort": "^10.11.0",
+    "@rohitkr/jss-plugin-rule-value-function": "^10.11.0",
+    "@rohitkr/jss-plugin-rule-value-observable": "^10.11.0",
+    "@rohitkr/jss-plugin-template": "^10.11.0",
+    "@rohitkr/jss-plugin-vendor-prefixer": "^10.11.0"
   }
 }

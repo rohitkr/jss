@@ -1,4 +1,4 @@
-import {create, sheets} from '@secure-jss/jss'
+import {create, sheets} from '@rohitkr/jss'
 import styles from '../fixtures/regular.json'
 
 function teardown() {

@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 
 import template from '../../src/index'
 import parse from '../../src/parse'

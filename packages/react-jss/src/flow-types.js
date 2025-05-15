@@ -7,7 +7,7 @@ import type {
   BaseRule,
   CreateGenerateIdOptions,
   GenerateId
-} from '@secure-jss/jss'
+} from '@rohitkr/jss'
 import type {Node} from 'react'
 import type {Theming} from 'theming'
 

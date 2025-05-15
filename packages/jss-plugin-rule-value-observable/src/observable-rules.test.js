@@ -2,9 +2,9 @@ import expect from 'expect.js'
 import {stripIndent} from 'common-tags'
 import Observable from 'zen-observable'
 
-import {create} from '@secure-jss/jss'
-import pluginDefaultUnit from '@secure-jss/jss-plugin-default-unit'
-import pluginCamelCase from '@secure-jss/jss-plugin-camel-case'
+import {create} from '@rohitkr/jss'
+import pluginDefaultUnit from '@rohitkr/jss-plugin-default-unit'
+import pluginCamelCase from '@rohitkr/jss-plugin-camel-case'
 import pluginObservable from '.'
 
 const settings = {createGenerateId: () => (rule) => `${rule.key}-id`}

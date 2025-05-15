@@ -1,13 +1,13 @@
 {
   "jss-plugin-template.js": {
-    "bundled": 1866,
-    "minified": 792,
+    "bundled": 1864,
+    "minified": 790,
     "gzipped": 481
   },
   "jss-plugin-template.min.js": {
-    "bundled": 1434,
-    "minified": 626,
-    "gzipped": 387
+    "bundled": 1432,
+    "minified": 624,
+    "gzipped": 384
   },
   "jss-plugin-template.cjs.js": {
     "bundled": 1341,

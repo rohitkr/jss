@@ -8,7 +8,7 @@ import {
   StyleSheetFactoryOptions,
   CreateGenerateIdOptions,
   Classes
-} from '@secure-jss/jss'
+} from '@rohitkr/jss'
 import {createTheming, useTheme, withTheme, ThemeProvider, Theming} from 'theming'
 
 declare const jss: Jss

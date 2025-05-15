@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 import bootstrap from './bootstrap'
 import bootstrapTheme from './bootstrap-theme'
 

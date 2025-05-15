@@ -1,7 +1,7 @@
 ﻿// @flow
-import type {JssOptions} from '@secure-jss/jss'
-import {type Options as DefaultUnitOptions} from '@secure-jss/jss-plugin-default-unit'
-import {type Options as ObservableOptions} from '@secure-jss/jss-plugin-rule-value-observable'
+import type {JssOptions} from '@rohitkr/jss'
+import {type Options as DefaultUnitOptions} from '@rohitkr/jss-plugin-default-unit'
+import {type Options as ObservableOptions} from '@rohitkr/jss-plugin-rule-value-observable'
 
 type Create = (
   {|

@@ -1,4 +1,4 @@
-import jss from '@secure-jss/jss'
+import jss from '@rohitkr/jss'
 
 // Styles
 const styles = {

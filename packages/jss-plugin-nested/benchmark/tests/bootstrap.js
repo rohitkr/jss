@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 
 import bootstrap from '../fixtures/modified-bootstrap.json'
 import nested from '../../src/index'

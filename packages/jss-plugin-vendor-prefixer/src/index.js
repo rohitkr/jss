@@ -1,5 +1,5 @@
 import * as vendor from 'css-vendor'
-import {toCssValue} from '@secure-jss/jss'
+import {toCssValue} from '@rohitkr/jss'
 
 /**
  * Add vendor prefix to a property name when needed.

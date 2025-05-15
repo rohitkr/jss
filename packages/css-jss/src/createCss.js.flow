@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {Jss} from '@secure-jss/jss'
+import type {Jss} from '@rohitkr/jss'
 // eslint-disable-next-line no-unused-vars
 import type {Css, StyleArg} from './types.js.flow'
 

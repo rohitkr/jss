@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 
-import jss from '@secure-jss/jss'
+import jss from '@rohitkr/jss'
 
 @Component({
   selector: 'app',

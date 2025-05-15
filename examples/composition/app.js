@@ -1,4 +1,4 @@
-import jss from '@secure-jss/jss'
+import jss from '@rohitkr/jss'
 import componentA from './component-a-style'
 import componentB from './component-b-style'
 

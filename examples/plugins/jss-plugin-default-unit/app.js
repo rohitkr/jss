@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginDefaultUnit from '@secure-jss/jss-plugin-default-unit'
+import jss from '@rohitkr/jss'
+import jssPluginDefaultUnit from '@rohitkr/jss-plugin-default-unit'
 
 const styles = {
   button: {

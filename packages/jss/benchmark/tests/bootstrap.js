@@ -1,5 +1,5 @@
-import {create} from '@secure-jss/jss'
-import global from '@secure-jss/jss-plugin-global'
+import {create} from '@rohitkr/jss'
+import global from '@rohitkr/jss-plugin-global'
 
 import styles from '../fixtures/bootstrap.json'
 

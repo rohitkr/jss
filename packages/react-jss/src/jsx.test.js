@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import expect from 'expect.js'
 import TestRenderer from 'react-test-renderer'
-import {create as createJss} from '@secure-jss/jss'
-import {create as createCss} from '@secure-jss/css-jss'
+import {create as createJss} from '@rohitkr/jss'
+import {create as createCss} from '@rohitkr/css-jss'
 import {create as createJsx} from './jsx'
 import {createGenerateId} from '../../../tests/utils'
 

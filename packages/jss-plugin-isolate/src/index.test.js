@@ -1,7 +1,7 @@
 import expect from 'expect.js'
-import {create, sheets} from '@secure-jss/jss'
+import {create, sheets} from '@rohitkr/jss'
 
-import nested from '@secure-jss/jss-plugin-nested'
+import nested from '@rohitkr/jss-plugin-nested'
 import isolate from './index'
 
 describe('jss-plugin-isolate', () => {

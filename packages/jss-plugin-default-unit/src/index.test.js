@@ -1,10 +1,10 @@
 import expect from 'expect.js'
-import expand from '@secure-jss/jss-plugin-expand'
-import {create} from '@secure-jss/jss'
+import expand from '@rohitkr/jss-plugin-expand'
+import {create} from '@rohitkr/jss'
 import {stripIndent} from 'common-tags'
 import Observable from 'zen-observable'
-import observablePlugin from '@secure-jss/jss-plugin-rule-value-observable'
-import functionPlugin from '@secure-jss/jss-plugin-rule-value-function'
+import observablePlugin from '@rohitkr/jss-plugin-rule-value-observable'
+import functionPlugin from '@rohitkr/jss-plugin-rule-value-function'
 
 import defaultUnit from './index'
 

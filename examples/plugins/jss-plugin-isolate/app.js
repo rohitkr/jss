@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginIsolate from '@secure-jss/jss-plugin-isolate'
+import jss from '@rohitkr/jss'
+import jssPluginIsolate from '@rohitkr/jss-plugin-isolate'
 
 const styles = {
   button: {

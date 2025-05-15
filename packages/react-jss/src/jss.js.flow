@@ -1,4 +1,4 @@
 // @flow
-import type {Jss} from '@secure-jss/jss'
+import type {Jss} from '@rohitkr/jss'
 
 declare export default Jss

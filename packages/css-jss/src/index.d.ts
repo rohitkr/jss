@@ -1,4 +1,4 @@
-import {Jss, JssStyle} from '@secure-jss/jss'
+import {Jss, JssStyle} from '@rohitkr/jss'
 
 export {JssStyle}
 

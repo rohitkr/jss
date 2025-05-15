@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable prefer-rest-params, prefer-spread */
 import * as React from 'react'
-import type {Css} from '@secure-jss/css-jss'
+import type {Css} from '@rohitkr/css-jss'
 
 type CreateElement = (type: string, props: Object | null, ..._args: any) => React.Node
 

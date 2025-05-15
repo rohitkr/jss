@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginPropsSort from '@secure-jss/jss-plugin-props-sort'
+import jss from '@rohitkr/jss'
+import jssPluginPropsSort from '@rohitkr/jss-plugin-props-sort'
 
 // Styles
 const styles = {

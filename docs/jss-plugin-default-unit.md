@@ -27,8 +27,8 @@ Compiles to:
 ### Customizing defaults
 
 ```javascript
-import jss from '@secure-jss/jss'
-import defaultUnit from '@secure-jss/jss-plugin-default-unit'
+import jss from '@rohitkr/jss'
+import defaultUnit from '@rohitkr/jss-plugin-default-unit'
 
 const options = {
   'line-height': 'rem',

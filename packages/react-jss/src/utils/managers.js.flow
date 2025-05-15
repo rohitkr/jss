@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {StyleSheet, SheetsManager} from '@secure-jss/jss'
+import type {StyleSheet, SheetsManager} from '@rohitkr/jss'
 import type {Context} from '../flow-types'
 
 type Options<Theme> = {

@@ -1,4 +1,4 @@
-import {RuleList} from '@secure-jss/jss'
+import {RuleList} from '@rohitkr/jss'
 
 const at = '@global'
 const atPrefix = '@global '

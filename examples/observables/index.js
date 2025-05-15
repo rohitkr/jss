@@ -1,7 +1,7 @@
 import {fromEvent} from 'rxjs'
 import {switchMap, map, takeUntil} from 'rxjs/operators'
-import jss from '@secure-jss/jss'
-import preset from '@secure-jss/jss-preset-default'
+import jss from '@rohitkr/jss'
+import preset from '@rohitkr/jss-preset-default'
 
 jss.setup(preset())
 

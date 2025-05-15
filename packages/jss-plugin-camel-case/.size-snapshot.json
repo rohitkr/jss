@@ -1,13 +1,13 @@
 {
   "jss-plugin-camel-case.js": {
-    "bundled": 2376,
-    "minified": 916,
-    "gzipped": 515
+    "bundled": 2374,
+    "minified": 914,
+    "gzipped": 513
   },
   "jss-plugin-camel-case.min.js": {
-    "bundled": 2376,
-    "minified": 916,
-    "gzipped": 515
+    "bundled": 2374,
+    "minified": 914,
+    "gzipped": 513
   },
   "jss-plugin-camel-case.cjs.js": {
     "bundled": 1733,

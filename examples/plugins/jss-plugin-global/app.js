@@ -1,5 +1,5 @@
-import jss from '@secure-jss/jss'
-import jssPluginGlobal from '@secure-jss/jss-plugin-global'
+import jss from '@rohitkr/jss'
+import jssPluginGlobal from '@rohitkr/jss-plugin-global'
 
 const styles = {
   '@global': {

@@ -1,3 +1,3 @@
-import {Plugin} from '@secure-jss/jss'
+import {Plugin} from '@rohitkr/jss'
 
 export default function jssPluginSyntaxCompose(): Plugin

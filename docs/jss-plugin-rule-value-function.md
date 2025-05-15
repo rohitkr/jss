@@ -52,7 +52,7 @@ const styles = {
 ### Updating
 
 ```javascript
-import jss from '@secure-jss/jss'
+import jss from '@rohitkr/jss'
 
 // Note that `link` option is required.
 const sheet = jss

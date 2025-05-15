@@ -1,12 +1,12 @@
 import * as React from 'react'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import {ThemeContext as DefaultThemeContext} from 'theming'
+import PropTypes from 'prop-types'
 import getDisplayName from './getDisplayName'
 import memoize from './utils/memoizeOne'
 import mergeClasses from './utils/mergeClasses'
 import getSheetIndex from './utils/getSheetIndex'
 import createUseStyles from './createUseStyles'
-import PropTypes from 'prop-types'
 
 const NoRenderer = (props) => props.children || null
 

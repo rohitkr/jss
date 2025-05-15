@@ -1,5 +1,5 @@
 ﻿// @flow
-import type {StyleSheetFactoryOptions, StyleSheet} from '@secure-jss/jss'
+import type {StyleSheetFactoryOptions, StyleSheet} from '@rohitkr/jss'
 import type {Context, DynamicRules, Styles} from '../flow-types'
 
 type Options<Theme> = {

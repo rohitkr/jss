@@ -1,5 +1,5 @@
 import expect from 'expect.js'
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 
 import propsSort from './index'
 

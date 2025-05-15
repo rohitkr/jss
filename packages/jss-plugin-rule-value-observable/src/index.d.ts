@@ -1,4 +1,4 @@
-import {Plugin, UpdateOptions} from '@secure-jss/jss'
+import {Plugin, UpdateOptions} from '@rohitkr/jss'
 
 export type Options = UpdateOptions
 

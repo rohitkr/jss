@@ -1,7 +1,7 @@
 {
-  "name": "@secure-jss/jss",
+  "name": "@rohitkr/jss",
   "description": "A lib for generating Style Sheets with JavaScript.",
-  "version": "10.10.0",
+  "version": "10.11.0",
   "license": "MIT",
   "homepage": "https://cssinjs.org/",
   "main": "dist/jss.cjs.js",

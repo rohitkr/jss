@@ -1,5 +1,5 @@
 import warning from 'tiny-warning'
-import {getDynamicStyles} from '@secure-jss/jss'
+import {getDynamicStyles} from '@rohitkr/jss'
 import {getManager} from './managers'
 import defaultJss from '../jss'
 import {addMeta, getMeta} from './sheetsMeta'

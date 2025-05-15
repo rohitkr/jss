@@ -1,4 +1,4 @@
-import {hasCSSTOMSupport} from '@secure-jss/jss'
+import {hasCSSTOMSupport} from '@rohitkr/jss'
 
 export const px = hasCSSTOMSupport && CSS ? CSS.px : 'px'
 export const ms = hasCSSTOMSupport && CSS ? CSS.ms : 'ms'

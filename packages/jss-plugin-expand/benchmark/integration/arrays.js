@@ -1,4 +1,4 @@
-import {create} from '@secure-jss/jss'
+import {create} from '@rohitkr/jss'
 import jssExpand from '../../src'
 import arraysWithoutPlugin from '../fixtures/arrays-without-plugin.json'
 import arraysWithPlugin from '../fixtures/arrays-with-plugin.json'
