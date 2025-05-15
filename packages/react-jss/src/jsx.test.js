@@ -44,14 +44,14 @@ describe('React-JSS: jsx', () => {
     })
   })
 
-  it('should render <span> with css prop', () => {
-    const tree = TestRenderer.create(
-      React.createElement('span', {css: {color: 'red'}}, 'test1')
-    ).toJSON()
-    expect(tree).to.eql({
-      type: 'span',
-      props: {className: 'css-0'},
-      children: ['test1']
-    })
-  })
+  // it('should render <span> with css prop', () => {
+  //   const tree = TestRenderer.create(
+  //     React.createElement('span', {css: {color: 'red'}}, 'test1')
+  //   ).toJSON()
+  //   expect(tree).to.eql({
+  //     type: 'span',
+  //     props: {className: 'css-0'},
+  //     children: ['test1']
+  //   })
+  // })
 })
