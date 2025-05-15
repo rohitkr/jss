@@ -1,5 +1,5 @@
 {
-  "name": "jss-plugin-rule-value-function",
+  "name": "@secure-jss/jss-plugin-rule-value-function",
   "description": "JSS plugin for function value and rule syntax",
   "version": "10.10.0",
   "license": "MIT",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "jss": "10.10.0",
+    "@secure-jss/jss": "10.10.0",
     "tiny-warning": "^1.0.2"
   }
 }

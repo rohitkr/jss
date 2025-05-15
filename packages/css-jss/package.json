@@ -1,5 +1,5 @@
 {
-  "name": "css-jss",
+  "name": "@secure-jss/css-jss",
   "description": "Implements css() interface on top of JSS",
   "version": "10.10.0",
   "license": "MIT",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "jss": "10.10.0",
-    "jss-preset-default": "10.10.0"
+    "@secure-jss/jss": "10.10.0",
+    "@secure-jss/jss-preset-default": "10.10.0"
   }
 }
