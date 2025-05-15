@@ -8,7 +8,7 @@
 
 > Global styles for JSS
 
-See our website [@rohitkr/jss-plugin-global](https://cssinjs.org/@rohitkr/jss-plugin-global?v=v10.11.0) for more information.
+See our website [@rohitkr/jss-plugin-global](https://cssinjs.org/@rohitkr/jss-plugin-global?v=v10.11.1) for more information.
 
 ## Install
 

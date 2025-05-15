@@ -8,7 +8,7 @@
 
 > JSS plugin that caches the rules and delivers insane performance.
 
-See our website [@rohitkr/jss-plugin-cache](https://cssinjs.org/@rohitkr/jss-plugin-cache?v=v10.11.0) for more information.
+See our website [@rohitkr/jss-plugin-cache](https://cssinjs.org/@rohitkr/jss-plugin-cache?v=v10.11.1) for more information.
 
 ## Install
 

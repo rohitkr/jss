@@ -8,7 +8,7 @@
 
 > JSS plugin that gives you a better syntax than CSS.
 
-See our website [@rohitkr/jss-plugin-expand](https://cssinjs.org/@rohitkr/jss-plugin-expand?v=v10.11.0) for more information.
+See our website [@rohitkr/jss-plugin-expand](https://cssinjs.org/@rohitkr/jss-plugin-expand?v=v10.11.1) for more information.
 
 ## Install
 

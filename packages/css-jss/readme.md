@@ -8,7 +8,7 @@
 
 > Implements css() interface on top of JSS
 
-See our website [@rohitkr/css-jss](https://cssinjs.org/@rohitkr/css-jss?v=v10.11.0) for more information.
+See our website [@rohitkr/css-jss](https://cssinjs.org/@rohitkr/css-jss?v=v10.11.1) for more information.
 
 ## Install
 

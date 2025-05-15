@@ -1,7 +1,7 @@
 {
   "name": "@rohitkr/css-jss",
   "description": "Implements css() interface on top of JSS",
-  "version": "10.11.0",
+  "version": "10.11.1",
   "license": "MIT",
   "homepage": "https://cssinjs.org/",
   "main": "dist/css-jss.cjs.js",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "@rohitkr/jss": "^10.11.0",
-    "@rohitkr/jss-preset-default": "^10.11.0"
+    "@rohitkr/jss": "^10.11.1",
+    "@rohitkr/jss-preset-default": "^10.11.1"
   }
 }

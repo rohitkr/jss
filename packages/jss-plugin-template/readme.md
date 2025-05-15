@@ -8,7 +8,7 @@
 
 > JSS plugin enables string templates
 
-See our website [@rohitkr/jss-plugin-template](https://cssinjs.org/@rohitkr/jss-plugin-template?v=v10.11.0) for more information.
+See our website [@rohitkr/jss-plugin-template](https://cssinjs.org/@rohitkr/jss-plugin-template?v=v10.11.1) for more information.
 
 ## Install
 
